@@ -1,0 +1,135 @@
+/* สไตล์พื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    margin-left: 300px; /* ระยะห่างจาก navbar */
+    padding: 100px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: calc(100% - 260px);  /* ปรับขนาดให้ไม่ทับกับ navbar */
+    margin-top: 40px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* สไตล์ตาราง */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+td:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ปุ่มการกระทำ */
+.edit-btn, .delete-btn, .advance-btn {
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #007bff;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.advance-btn {
+    background-color: #6c757d;
+}
+
+.advance-btn:hover {
+    background-color: #ffffff;
+}
+
+/* ข้อความแสดงผล */
+.success-message, .error-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* การ์ดแสดงคนงาน */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* จัดการการ์ดให้เต็มหน้าจอ */
+    gap: 20px; /* ระยะห่างระหว่างการ์ด */
+    width: 100%;
+    max-width: 1200px; /* ขยายขนาดพื้นที่ */
+    margin: 0 auto; /* จัดให้อยู่กลางหน้า */
+    padding: 20px; /* เพิ่ม padding รอบคอนเทนเนอร์ */
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+

@@ -1,0 +1,45 @@
+/* Navbar */
+.navbar {
+    width: 250px;  /* กำหนดความกว้างที่แน่นอน */
+    height: 100vh;  /* ความสูงเต็มหน้าจอ */
+    background-color: #333;  /* สีพื้นหลังของ Navbar */
+    position: fixed;  /* ตำแหน่งคงที่อยู่ด้านซ้าย */
+    top: 0;
+    left: 0;
+    overflow-y: auto;  /* เพิ่มการเลื่อนในแนวตั้งหากเนื้อหาเกินความสูง */
+    padding-top: 20px;
+    z-index: 1000;  /* ทำให้ Navbar อยู่ชั้นบนสุด */
+}
+
+.navbar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 10px;  /* เพิ่มระยะห่างระหว่างลิงก์ */
+}
+
+.navbar a i {
+    margin-right: 10px;  /* ระยะห่างไอคอนกับข้อความ */
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;  /* ทำให้เนื้อหาเริ่มจากจุดที่ห่างจากซ้าย 250px เพื่อไม่ให้ทับกับ Navbar */
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;  /* ความสูงเต็มหน้าจอ */
+    box-sizing: border-box;  /* กำหนดการคิดขนาดให้รวม padding ด้วย */
+    z-index: 1;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
